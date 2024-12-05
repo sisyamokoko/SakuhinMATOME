@@ -1,23 +1,35 @@
+// src/App.js
 import React from "react";
-import "./styles.scss";
-import Card from "./Card";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Card from "./components/Card";
+import CardDetail from "./components/CardDetail";
 import cardData from "./data";
+import "./styles.scss";
 
 function App() {
   return (
-    <div>
-      <h1 className="title">Hover over the cards</h1>
-      <div className="container">
-        {cardData.map((card) => (
-          <Card
-            key={card.id}
-            title={card.title}
-            content={card.content}
-            image={card.image}
-          />
-        ))}
+    <Router>
+      <div>
+        <h1 className="title">Graphic</h1>
+        <div className="container">
+          {cardData.map((card) => (
+            <Card
+              key={card.id}
+              id={card.id} // idをCardコンポーネントに渡す
+              title={card.title}
+              content={card.content}
+              image={card.image}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+
+      {/* ルーティング設定 */}
+      <Routes>
+        <Route path="/card/:id" element={<CardDetail />} />{" "}
+        {/* カード詳細ページ */}
+      </Routes>
+    </Router>
   );
 }
 
