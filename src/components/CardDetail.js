@@ -1,23 +1,27 @@
-// src/components/CardDetail.js
 import React from "react";
-import { useParams } from "react-router-dom";
-import cardData from "../data"; // カードデータをインポート
+import { useParams, Link } from "react-router-dom";
+import cardData from "../data"; // data をインポート
 
-const CardDetail = () => {
-  const { id } = useParams(); // URLのidパラメーターを取得
-  const card = cardData.find((card) => card.id === parseInt(id)); // idに一致するカードを検索
+function CardDetail() {
+  const { id } = useParams(); // URLのパラメータから id を取得
+  const card = cardData.find((card) => card.id === parseInt(id)); // id に一致するカードデータを検索
 
   if (!card) {
-    return <div>カードが見つかりません</div>; // カードが見つからない場合
+    return <p>カードが見つかりません</p>;
   }
 
   return (
     <div className="card-detail">
       <h1>{card.title}</h1>
-      <img src={card.image} alt={card.title} />
-      <p>{card.content}</p>
+      <div className="card-detail-content">
+        <img src={card.image} alt={card.title} />
+        <p>{card.content}</p>
+      </div>
+      <Link to="/" className="back-button">
+        戻る
+      </Link>
     </div>
   );
-};
+}
 
 export default CardDetail;

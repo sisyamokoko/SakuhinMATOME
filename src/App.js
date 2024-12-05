@@ -1,10 +1,8 @@
-// src/App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; // LinkとRoutes, Routeをインポート
 import Card from "./components/Card";
-import CardDetail from "./components/CardDetail";
-import cardData from "./data";
-import "./styles.scss";
+import DummyPage from "./components/DummyPage"; // ダミーページをインポート
+import cardData from "./data"; // ダミーデータをインポート
 
 function App() {
   return (
@@ -15,7 +13,7 @@ function App() {
           {cardData.map((card) => (
             <Card
               key={card.id}
-              id={card.id} // idをCardコンポーネントに渡す
+              id={card.id}
               title={card.title}
               content={card.content}
               image={card.image}
@@ -24,10 +22,10 @@ function App() {
         </div>
       </div>
 
-      {/* ルーティング設定 */}
+      {/* ダミーページへのリンクを設定 */}
       <Routes>
-        <Route path="/card/:id" element={<CardDetail />} />{" "}
-        {/* カード詳細ページ */}
+        <Route path="/" element={<h2>ホームページ</h2>} /> {/* ホームページ */}
+        <Route path="/dummy" element={<DummyPage />} /> {/* ダミーページ */}
       </Routes>
     </Router>
   );

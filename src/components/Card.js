@@ -1,6 +1,5 @@
-// src/components/Card.js
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom"; // Linkをインポート
+import { Link } from "react-router-dom"; // Link をインポート
 import "../styles.scss";
 
 function Card({ id, title, content, image }) {
@@ -30,9 +29,9 @@ function Card({ id, title, content, image }) {
       onMouseLeave={handleMouseLeave}
       ref={cardRef}
     >
-      <Link to={`/card/${id}`} className="card-link">
+      <Link to="/dummy">
         {" "}
-        {/* Linkで遷移 */}
+        {/* ダミーページへ遷移 */}
         <div
           className="card"
           style={{
