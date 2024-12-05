@@ -16,20 +16,19 @@ body {
   font-weight: 700;
   color: #5D4037;
   text-align: center;
-}
-
-p {
-  line-height: 1.5em;
-}
-
-h1+p, p+p {
-  margin-top: 10px;
+  margin-bottom: 30px; /* タイトルとカードの間にスペースを追加 */
 }
 
 .container {
   padding: 40px 80px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* 縦に並べる */
+  align-items: center;
+}
+
+.card-container {
+  display: flex; /* カードを横並びに */
+  flex-wrap: wrap; /* 画面幅に応じてカードが折り返す */
   justify-content: center;
 }
 
@@ -38,7 +37,6 @@ h1+p, p+p {
   transform: perspective(800px);
   transform-style: preserve-3d;
   cursor: pointer;
-  // background-color: #fff;
   
   &:hover {
     .card-info {
@@ -145,29 +143,4 @@ h1+p, p+p {
   font-size: 36px;
   font-weight: 700;
   text-shadow: rgba(black, 0.5) 0 10px 10px;
-}
-
-.card-detail {
-  padding: 40px;
-  text-align: center;
-}
-
-.card-detail img {
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.card-detail .back-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #5d4037;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.card-detail .back-button:hover {
-  background-color: #3e2723;
 }

@@ -1,8 +1,7 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom"; // Link をインポート
-import "../styles.scss";
+import "../styles.scss"; // スタイルファイル
 
-function Card({ id, title, content, image }) {
+function Card({ title, content, image }) {
   const cardRef = useRef(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -29,30 +28,26 @@ function Card({ id, title, content, image }) {
       onMouseLeave={handleMouseLeave}
       ref={cardRef}
     >
-      <Link to="/dummy">
-        {" "}
-        {/* ダミーページへ遷移 */}
+      <div
+        className="card"
+        style={{
+          transform: `rotateY(${mousePosition.x}deg) rotateX(${mousePosition.y}deg)`,
+        }}
+      >
         <div
-          className="card"
+          className="card-bg"
           style={{
-            transform: `rotateY(${mousePosition.x}deg) rotateX(${mousePosition.y}deg)`,
+            backgroundImage: `url(${image})`,
+            transform: `translate(${mousePosition.x * -2}px, ${
+              mousePosition.y * 0.5
+            }px)`, // Y軸方向を逆にした
           }}
-        >
-          <div
-            className="card-bg"
-            style={{
-              backgroundImage: `url(${image})`,
-              transform: `translate(${mousePosition.x * -2}px, ${
-                mousePosition.y * -0.5
-              }px)`, // 背景画像の移動
-            }}
-          ></div>
-          <div className="card-info">
-            <h1>{title}</h1>
-            <p>{content}</p>
-          </div>
+        ></div>
+        <div className="card-info">
+          <h1>{title}</h1>
+          <p>{content}</p>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }
