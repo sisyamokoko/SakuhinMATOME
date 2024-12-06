@@ -1,20 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./HomePage/Home";
+import Header from "./Layout/Header";
+import Footer from "./Layout/Footer";
+import HomePage from "./HomePage/Home";
 import GraphicHome from "./Graphic/GraphicHome";
-import CardDetail from "./components/CardDetails"; // 大文字小文字に注意
 import "./styles.scss";
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/graphic" element={<GraphicHome />} />
-        <Route path="/graphic/:id" element={<CardDetail />} />
-      </Routes>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/graphic" element={<GraphicHome />} />
+        </Routes>
+      </main>
+      <Footer />
     </Router>
   );
-}
+};
 
 export default App;

@@ -2,12 +2,15 @@ $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 body {
-  margin: 40px 0;
+  margin: 0;
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
   background-color: #BCAAA4;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column; /* ヘッダー、コンテンツ、フッターを縦に並べる */
+  min-height: 100vh; /* ビューポートの高さを100% */
 }
 
 .title {
@@ -163,4 +166,56 @@ body {
 .home-page {
   text-align: center;
   margin-top: 50px;
+}
+
+/* ヘッダー */
+.header {
+  width: 100%;
+  height: 80px; /* ヘッダーの高さを変更 */
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* ヘッダー内のロゴ */
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ヘッダー内のナビゲーション */
+.header .nav {
+  display: flex;
+}
+
+.header .nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* フッター */
+.footer {
+  width: 100%;
+  height: 60px; /* フッターの高さを変更 */
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* フッターをページの一番下に配置 */
+  position: relative; /* フッターがスクロールに応じてページ下部に来る */
+}
+
+.footer .content {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
 }
