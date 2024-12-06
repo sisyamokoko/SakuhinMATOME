@@ -1,33 +1,39 @@
 .footer {
-    width: 100%;
-    height: 80px; /* 高さ調整 */
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between; /* 左右に要素を配置 */
-    align-items: center; /* 縦方向に中央に配置 */
-    padding: 0 20px; /* 左右の余白 */
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 15px; /* アイコン間の間隔 */
-  }
-  
-  .material-icons {
-    font-size: 30px; /* アイコンのサイズ */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .material-icons:hover {
-    transform: scale(1.1); /* ホバー時にアイコンを少し大きく */
-  }
-  
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center; /* フッター全体を中央揃え */
+  align-items: center;
+  position: relative;
+  padding: 0 20px; /* 余白を設定 */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* コピーライトとアイコンを左右に配置 */
+  width: 80%;
+  max-width: 1200px; /* 最大幅を設定 */
+  align-items: center;
+}
+
+.footer-copyright {
+  margin-right: 0px; /* コピーライトとアイコンの間に距離を追加 */
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* アイコン間に距離を追加 */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.custom-header {
+  background-color: #333 !important; /* ここで好きな色に変更 */
+}
+

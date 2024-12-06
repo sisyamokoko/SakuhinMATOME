@@ -1,11 +1,11 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, Button } from "@mui/material"; // 正しいインポート
-
+import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import "./Layout.scss"; // SCSSファイルをインポート
 
 const Header = () => {
   return (
-    <AppBar position="fixed" color="primary">
+    <AppBar position="fixed" className="custom-header">
       <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
         {/* サイト名 */}
         <Typography variant="h6" component="div">

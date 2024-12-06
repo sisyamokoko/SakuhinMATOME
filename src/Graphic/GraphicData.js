@@ -27,6 +27,34 @@ const GraphicData = [
     image:
       "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
   },
+  {
+    id: 5,
+    title: "D",
+    content: "ここにテキストが入ります。ここにテキストが入ります。",
+    image:
+      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
+  },
+  {
+    id: 6,
+    title: "D",
+    content: "ここにテキストが入ります。ここにテキストが入ります。",
+    image:
+      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
+  },
+  {
+    id: 7,
+    title: "D",
+    content: "ここにテキストが入ります。ここにテキストが入ります。",
+    image:
+      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
+  },
+  {
+    id: 8,
+    title: "D",
+    content: "ここにテキストが入ります。ここにテキストが入ります。",
+    image:
+      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
+  },
 ];
 
 export default GraphicData;

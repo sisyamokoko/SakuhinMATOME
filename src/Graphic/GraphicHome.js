@@ -6,16 +6,18 @@ import "../styles.scss";
 function GraphicHome() {
   return (
     <div className="container">
-      <h1 className="title">グラフィック</h1>
-      <div className="card-container">
-        {GraphicData.map((card) => (
-          <Card
-            key={card.id}
-            title={card.title}
-            content={card.content}
-            image={card.image}
-          />
-        ))}
+      <h1 className="title">Graphic</h1>
+      <div className="card-wrapper">
+        <div className="card-container">
+          {GraphicData.map((card) => (
+            <Card
+              key={card.id}
+              title={card.title}
+              content={card.content}
+              image={card.image}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
