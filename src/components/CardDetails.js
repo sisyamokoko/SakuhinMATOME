@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import cardData from "../data"; // data をインポート
+import cardData from "../Graphic/GraphicData";
 
 function CardDetail() {
   const { id } = useParams(); // URLのパラメータから id を取得

@@ -1,25 +1,19 @@
 import React from "react";
-import Card from "./components/Card"; // Card コンポーネントをインポート
-import cardData from "./data"; // ダミーデータ（カードの内容）をインポート
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./HomePage/Home";
+import GraphicHome from "./Graphic/GraphicHome";
+import CardDetail from "./components/CardDetails"; // 大文字小文字に注意
+import "./styles.scss";
 
 function App() {
   return (
-    <div className="container">
-      {/* グラフィックのタイトル */}
-      <h1 className="title">グラフィック</h1>
-
-      {/* カードを表示するコンテナ */}
-      <div className="card-container">
-        {cardData.map((card) => (
-          <Card
-            key={card.id}
-            title={card.title}
-            content={card.content}
-            image={card.image}
-          />
-        ))}
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/graphic" element={<GraphicHome />} />
+        <Route path="/graphic/:id" element={<CardDetail />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,5 +1,4 @@
-// src/data.js
-const cardData = [
+const GraphicData = [
   {
     id: 1,
     title: "A",
@@ -30,4 +29,4 @@ const cardData = [
   },
 ];
 
-export default cardData;
+export default GraphicData;
