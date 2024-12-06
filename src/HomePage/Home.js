@@ -4,10 +4,10 @@ import "./Home.scss";
 const Card = ({ title, cardType }) => {
   return (
     <div className={`content-box ${cardType ? cardType : ""}`}>
-      <h2>{title}</h2>
-      <p>a lonely trip.</p>
+      <h2 className="card-title">{title}</h2>
+      <p className="card-subtitle">Contents...</p>
       <div className="photo-area"></div>
-      <ul>
+      <ul className="vertical-dots">
         {Array(22)
           .fill(null)
           .map((_, index) => (
@@ -23,8 +23,8 @@ const Card = ({ title, cardType }) => {
 const App = () => {
   return (
     <div className="main-wrapper">
-      <Card title="North" cardType="content-box" />
-      <Card title="Vauxhall" cardType="content-box2" />
+      <Card title="Profile" cardType="content-box" />
+      <Card title="Graphic" cardType="content-box2" />
       <Card title="Eden" cardType="content-box3" />
       <Card title="Clifton" cardType="content-box4" />
     </div>
