@@ -5,10 +5,10 @@ import "../styles.scss";
 
 function GraphicHome() {
   return (
-    <div className="container">
+    <div className="Graphic-container">
       <h1 className="title">Graphic</h1>
-      <div className="card-wrapper">
-        <div className="card-container">
+      <div className="home-card-wrapper">
+        <div className="home-card-container">
           {GraphicData.map((card) => (
             <Card
               key={card.id}

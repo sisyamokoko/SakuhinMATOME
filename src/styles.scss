@@ -24,14 +24,14 @@ body {
 }
 
 
-.container {
+.Graphic-container {
   padding: 40px 80px;
   display: flex;
   flex-direction: column; /* 縦に並べる */
   align-items: center;
 }
 
-.card-wrapper {
+.home-card-wrapper {
   display: flex;
   justify-content: center; /* コンテナ全体を中央揃え */
   width: 100%; /* ページ全体に広げる */
@@ -39,7 +39,7 @@ body {
   max-width: 1200px; /* 中央に配置しやすい幅制限 */
 }
 
-.card-container {
+.home-card-container {
   display: flex; /* カードを横並びに */
   flex-wrap: wrap; /* 画面幅に応じてカードを折り返す */
   justify-content: center; /* 中央揃え */
@@ -234,3 +234,4 @@ body {
   font-size: 14px;
   color: #fff;
 }
+

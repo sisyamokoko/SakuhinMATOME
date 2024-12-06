@@ -1,17 +1,34 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../styles.scss";
+import "./Home.scss";
 
-function Home() {
+const Card = ({ title, cardType }) => {
   return (
-    <div className="home-page">
-      <h1>ホームページ</h1>
-      <p>こちらは簡易的なホームページです。</p>
-      <Link to="/graphic" className="link-button">
-        グラフィックページへ
-      </Link>
+    <div className={`content-box ${cardType ? cardType : ""}`}>
+      <h2>{title}</h2>
+      <p>a lonely trip.</p>
+      <div className="photo-area"></div>
+      <ul>
+        {Array(22)
+          .fill(null)
+          .map((_, index) => (
+            <li key={index}></li>
+          ))}
+      </ul>
+      <div className="network-icons"></div>
+      <button className="click-button"></button>
     </div>
   );
-}
+};
 
-export default Home;
+const App = () => {
+  return (
+    <div className="main-wrapper">
+      <Card title="North" cardType="content-box" />
+      <Card title="Vauxhall" cardType="content-box2" />
+      <Card title="Eden" cardType="content-box3" />
+      <Card title="Clifton" cardType="content-box4" />
+    </div>
+  );
+};
+
+export default App;
