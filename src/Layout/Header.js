@@ -9,7 +9,7 @@ const Header = () => {
       <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
         {/* サイト名 */}
         <Typography variant="h6" component="div">
-          TanakaShoudaiPortfolio
+          TanakaShoudai Portfolio
         </Typography>
 
         {/* ナビゲーションボタン */}

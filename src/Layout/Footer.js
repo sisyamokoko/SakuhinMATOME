@@ -16,7 +16,7 @@ const Footer = () => {
             <i className="fab fa-instagram"></i>
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/cqramail_"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"

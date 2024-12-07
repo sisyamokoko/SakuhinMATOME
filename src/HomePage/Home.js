@@ -23,10 +23,11 @@ const Card = ({ title, cardType }) => {
 const App = () => {
   return (
     <div className="main-wrapper">
-      <Card title="Profile" cardType="content-box" />
-      <Card title="Graphic" cardType="content-box2" />
-      <Card title="Eden" cardType="content-box3" />
-      <Card title="Clifton" cardType="content-box4" />
+      <h1 className="main-title">Contents</h1>
+      <Card title="Graphic" cardType="content-box" />
+      <Card title="3DCG" cardType="content-box2" />
+      <Card title="Other" cardType="content-box3" />
+      <Card title="Profile" cardType="content-box4" />
     </div>
   );
 };
