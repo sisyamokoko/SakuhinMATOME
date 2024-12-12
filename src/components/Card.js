@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "../styles.scss"; // スタイルファイル
 
-function Card({ title, content, image }) {
+function Card({ title, content, image, category }) {
   const cardRef = useRef(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -44,8 +44,9 @@ function Card({ title, content, image }) {
           }}
         ></div>
         <div className="card-info">
+          <p className="card-category">{category}</p>
           <h1>{title}</h1>
-          <p>{content}</p>
+          <p className="card-content">{content}</p>
         </div>
       </div>
     </div>

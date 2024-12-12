@@ -1,6 +1,7 @@
 const GraphicData = [
   {
     id: 1,
+    category: "タイポグラフィ",
     title: "A",
     content: "ここにテキストが入ります。ここにテキストが入ります。",
     image:
@@ -8,6 +9,7 @@ const GraphicData = [
   },
   {
     id: 2,
+    category: "タイポグラフィ",
     title: "B",
     content: "ここにテキストが入ります。ここにテキストが入ります。",
     image:
@@ -15,6 +17,7 @@ const GraphicData = [
   },
   {
     id: 3,
+    category: "タイポグラフィ",
     title: "C",
     content: "ここにテキストが入ります。ここにテキストが入ります。",
     image:
@@ -22,6 +25,7 @@ const GraphicData = [
   },
   {
     id: 4,
+    category: "タイポグラフィ",
     title: "D",
     content: "ここにテキストが入ります。ここにテキストが入ります。",
     image:
@@ -29,6 +33,7 @@ const GraphicData = [
   },
   {
     id: 5,
+    category: "タイポグラフィ",
     title: "D",
     content: "ここにテキストが入ります。ここにテキストが入ります。",
     image:
@@ -36,6 +41,7 @@ const GraphicData = [
   },
   {
     id: 6,
+    category: "タイポグラフィ",
     title: "D",
     content: "ここにテキストが入ります。ここにテキストが入ります。",
     image:
@@ -43,6 +49,7 @@ const GraphicData = [
   },
   {
     id: 7,
+    category: "タイポグラフィ",
     title: "D",
     content: "ここにテキストが入ります。ここにテキストが入ります。",
     image:
@@ -50,6 +57,7 @@ const GraphicData = [
   },
   {
     id: 8,
+    category: "タイポグラフィ",
     title: "D",
     content: "ここにテキストが入ります。ここにテキストが入ります。",
     image:

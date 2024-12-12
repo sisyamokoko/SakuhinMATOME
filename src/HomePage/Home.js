@@ -23,6 +23,17 @@ const Card = ({ title, cardType }) => {
 const App = () => {
   return (
     <div className="main-wrapper">
+      <h1 className="main-title">TanakaShoudai Portfolio</h1>
+      <p className="Slogan">
+        ターゲットのために様々なスタイル・ツールを
+        <br />
+        使い分ける事が出来るデザイナーです
+      </p>
+      <p className="description">
+        グラフィック作品をまとめたページです。
+        <br />
+        主にポスター・パッケージ・タイポグラフィなどがあります。
+      </p>
       <h1 className="main-title">Contents</h1>
       <Card title="Graphic" cardType="content-box" />
       <Card title="3DCG" cardType="content-box2" />

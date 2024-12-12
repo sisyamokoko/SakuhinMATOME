@@ -2,8 +2,8 @@ $bg-color: #bcaaa4;
 $shdow-gray: #bcaaa4;
 $orange: #da4d1d;
 $blue: #2b26c3;
-$yellow: #ffea2e;
-$green: #31e2b6;
+$yellow: #976f00;
+$green: #347928;
 $img-url: "https://images.unsplash.com/photo-1525543907410-b2562b6796d6?ixlib=rb-0.3.5&s=9ff8e5e718a6a40cbd0e1471235912f4&auto=format&fit=crop&w=3452&q=80";
 $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80";
 $img-url3: "https://app.helloohana.co.jp/wp-content/uploads/2023/10/65D037DB-C1E9-474E-9C49-EE7164622313.jpg";
@@ -230,4 +230,25 @@ $img-url4: "https://png.pngtree.com/thumb_back/fw800/background/20230421/pngtree
   text-align: center;
   margin-top: 0px; /* ヘッダーとの距離を調整 */
   margin-bottom: 30px; /* タイトルとカードの間にスペースを追加 */
+}
+
+.Slogan {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #da6f31;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.description {
+  font-family: 'Kiwi Maru', sans-serif;
+  font-size: 18px;
+  color: #5D4037;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  line-height: 1.6;
 }

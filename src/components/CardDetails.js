@@ -12,6 +12,7 @@ function CardDetail() {
 
   return (
     <div className="card-detail">
+      <p className="card-detail-category">{card.category}</p>
       <h1>{card.title}</h1>
       <div className="card-detail-content">
         <img src={card.image} alt={card.title} />
