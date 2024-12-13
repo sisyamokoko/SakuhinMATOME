@@ -52,7 +52,11 @@ const Home = () => {
         cardType="content-box"
         onClick={() => navigate("/graphic")} // クリックで`/graphic`に遷移
       />
-      <Card title="3DCG" cardType="content-box2" />
+      <Card
+        title="3DCG"
+        cardType="content-box2"
+        onClick={() => navigate("/3dcg")}
+      />
       <Card title="Other" cardType="content-box3" />
       <Card title="Profile" cardType="content-box4" />
     </div>
