@@ -29,6 +29,9 @@ const Header = () => {
           <Button color="inherit" component={Link} to="/3dcg">
             3DCG
           </Button>
+          <Button color="inherit" component={Link} to="/other">
+            Other
+          </Button>
         </div>
       </Toolbar>
     </AppBar>
