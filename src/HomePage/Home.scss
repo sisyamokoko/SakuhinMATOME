@@ -236,11 +236,14 @@ $img-url4: "https://png.pngtree.com/thumb_back/fw800/background/20230421/pngtree
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 36px;
   font-weight: 900;
-  color: #da6f31;
+  color: #d04732;
   text-align: center;
   margin-top: -15px;
   margin-bottom: 10px;
   line-height: 1.2;
+  max-width: 85%; /* 最大幅を70%に制限 */
+  margin-left: auto; /* 左右中央揃え */
+  margin-right: auto; /* 左右中央揃え */
 }
 
 .description {
@@ -251,4 +254,7 @@ $img-url4: "https://png.pngtree.com/thumb_back/fw800/background/20230421/pngtree
   margin-top: 10px;
   margin-bottom: 100px;
   line-height: 1.6;
+  max-width: 80%; /* 最大幅を70%に制限 */
+  margin-left: auto; /* 左右中央揃え */
+  margin-right: auto; /* 左右中央揃え */
 }

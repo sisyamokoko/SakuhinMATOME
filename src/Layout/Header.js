@@ -8,7 +8,13 @@ const Header = () => {
     <AppBar position="fixed" className="custom-header">
       <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
         {/* サイト名 */}
-        <Typography variant="h6" component="div">
+        <Typography
+          variant="h6"
+          color="inherit"
+          component={Link}
+          to="/"
+          style={{ textDecoration: "none" }} // 下線を非表示にする
+        >
           TanakaShoudai Portfolio
         </Typography>
 

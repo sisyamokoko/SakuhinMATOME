@@ -1,9 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // ページ遷移用のhook
 import "./Home.scss";
 
-const Card = ({ title, cardType }) => {
+const Card = ({ title, cardType, onClick }) => {
   return (
-    <div className={`content-box ${cardType ? cardType : ""}`}>
+    <div
+      className={`content-box ${cardType ? cardType : ""}`}
+      onClick={onClick} // カードクリック時の処理
+    >
       <h2 className="card-title">{title}</h2>
       <p className="card-subtitle">Contents...</p>
       <div className="photo-area"></div>
@@ -20,7 +24,9 @@ const Card = ({ title, cardType }) => {
   );
 };
 
-const App = () => {
+const Home = () => {
+  const navigate = useNavigate(); // ページ遷移用のフック
+
   return (
     <div className="main-wrapper">
       <h1 className="main-title">TanakaShoudai Portfolio</h1>
@@ -30,12 +36,22 @@ const App = () => {
         使い分ける事が出来るデザイナーです
       </p>
       <p className="description">
-        グラフィック作品をまとめたページです。
+        私は課題制作でも自主制作でも<b>「人のためのデザイン」</b>
+        モットーに、ターゲット目線でデザインをしています。
         <br />
-        主にポスター・パッケージ・タイポグラフィなどがあります。
+        大学では<b>映像制作</b>
+        を専攻しており、この分野を中心に学んでいます。また、自主制作では
+        <b>グラフィックデザイン</b>や<b>3DCG</b>
+        にも取り組んでおり、これらのスキルを活かした作品制作を行っています。さらに、
+        <b>プログラミング</b>
+        にも少しですが挑戦しており、幅広い分野でのスキル向上を目指しています。
       </p>
       <h1 className="main-title">Contents</h1>
-      <Card title="Graphic" cardType="content-box" />
+      <Card
+        title="Graphic"
+        cardType="content-box"
+        onClick={() => navigate("/graphic")} // クリックで`/graphic`に遷移
+      />
       <Card title="3DCG" cardType="content-box2" />
       <Card title="Other" cardType="content-box3" />
       <Card title="Profile" cardType="content-box4" />
@@ -43,4 +59,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
