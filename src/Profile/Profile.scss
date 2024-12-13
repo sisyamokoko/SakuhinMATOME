@@ -1,0 +1,109 @@
+.profile-container {
+    width: 80%; /* 親要素の幅に対して80%の幅を使用 */
+    max-width: 900px; /* 最大幅を900pxに設定 */
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
+    background: none; /* 背景を削除 */
+    box-shadow: none; /* ボックスシャドウを削除 */
+    
+    .profile-header {
+      font-family: 'Oswald', sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: #5D4037;
+      text-align: center;
+      margin-top: 85px;
+      margin-bottom: 10px;
+    }
+    
+    .profile-content {
+      display: flex; /* 横並びに変更 */
+      align-items: center; /* アイテムを縦中央に揃える */
+      margin-top: 20px;
+    }
+    
+    .profile-picture {
+      text-align: center;
+      flex: 1; /* 画像の部分に十分なスペースを与える */
+    
+      .profile-img {
+        width: 250px; /* 横幅 */
+        height: 350px; /* 高さ */
+        border-radius: 40px; /* 丸みをつける */
+        object-fit: cover; /* 画像の比率を保ちつつ、枠内に収める */
+        object-position: center top; 
+      }
+    }
+    
+    .profile-details {
+      flex: 2; /* 残りのスペースをすべて占める */
+      text-align: left;
+      padding: 0 20px;
+    
+      h2 {
+        font-family: 'Kiwi Maru', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: #1f1e1e;
+        margin-bottom: -20px;
+      }
+  
+      h3 {
+        font-family: 'Kiwi Maru', sans-serif;
+        font-size: 23px;
+        font-weight: 600;
+        color: #1f1e1e;
+        line-height: 1.2;
+      }
+    
+      p {
+        font-family: 'Kiwi Maru', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #1f1e1e;
+        text-align: left;
+        margin-bottom: 40px;
+        margin-top: -15px;
+        line-height: 1.2;
+      }
+  
+      /* ソーシャルアイコンのスタイル */
+      .social-links {
+        display: flex;
+        justify-content: flex-start; /* アイコンを左揃え */
+        gap: 20px; /* アイコン間のスペースを調整 */
+        margin-top: 20px; /* 少し上部の余白を追加 */
+      }
+    
+      .social-links a {
+        color: #333;
+        font-size: 24px;
+        text-decoration: none;
+        transition: all 0.3s ease; /* ホバー時のトランジションを追加 */
+      }
+  
+      /* Twitter アイコンのホバー時に青色 */
+      .twitter:hover {
+        color: #1DA1F2; /* Twitterの青 */
+      }
+  
+      /* Instagram アイコンのホバー時に指定されたグラデーション */
+      .instagram {
+        position: relative;
+        display: inline-block;
+      }
+  
+      .instagram:hover {
+        color: transparent; /* アイコンの色を透明にして背景色だけにする */
+        background: linear-gradient(to right,
+          rgba(247, 207, 0, 0.7),
+          rgba(246, 37, 2, 0.7) 45%,
+          rgba(182, 47, 82, 0.7) 75%,
+          rgba(113, 58, 166, 0.7));
+        -webkit-background-clip: text; /* テキストにグラデーションを適用 */
+        background-clip: text; /* テキストにグラデーションを適用 */
+      }
+    }
+  }
+  

@@ -11,6 +11,7 @@ import HomePage from "./HomePage/Home";
 import GraphicHome from "./Graphic/GraphicHome";
 import CGHome from "./3DCG/CGHome";
 import OtherHome from "./Other/OtherHome";
+import Profile from "./Profile/ProfileHome";
 import "./styles.scss";
 
 const useScrollToTop = () => {
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/graphic" element={<GraphicHome />} />
           <Route path="/3dcg" element={<CGHome />} />
           <Route path="/other" element={<OtherHome />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
       <Footer />

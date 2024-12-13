@@ -62,7 +62,11 @@ const Home = () => {
         cardType="content-box3"
         onClick={() => navigate("/other")}
       />
-      <Card title="Profile" cardType="content-box4" />
+      <Card
+        title="Profile"
+        cardType="content-box4"
+        onClick={() => navigate("/profile")}
+      />
     </div>
   );
 };
