@@ -22,9 +22,7 @@ const Profile = () => {
             <br />
             メディアデザイン専攻
           </h3>
-          <h4>
-            2004/01/08 生まれ
-          </h4>
+          <h4>2004/01/08 生まれ</h4>
           <p>
             　私は、デザインを学びたすぎて高専を自主退学し情報デザイン学科に入学した異例の経歴を持ちます。
             <br />
@@ -47,7 +45,7 @@ const Profile = () => {
               <i className="fab fa-twitter"></i>
             </a>
             <a
-              href="https://www.instagram.com/syamomomon/profilecard/?igsh=ZndjNm5vc3k2bXI3"
+              href="https://www.instagram.com/syamomomon/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"

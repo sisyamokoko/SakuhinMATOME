@@ -1,0 +1,212 @@
+/* コンテナ全体のスタイル */
+.other-container {
+    width: 80%; /* 親要素の幅に対して80%の幅を使用 */
+    max-width: 900px; /* 最大幅を900pxに設定 */
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
+    background: none; /* 背景を削除 */
+    box-shadow: none; /* ボックスシャドウを削除 */
+  }
+  
+  /* ヘッダーのスタイル */
+  .other-header {
+    font-family: 'Kiwi Maru', sans-serif;
+    font-size: 23px;
+    font-weight: 900;
+    color: #5D4037;
+    text-align: center;
+    margin-top: 85px;
+    margin-bottom: 50px;
+    
+    p {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 28px;
+      font-weight: 900;
+      text-align: center;
+      color: #d04732;
+      margin-top: -20px;
+    }
+  }
+  
+  /* コンテンツ全体のスタイル */
+  .other-content {
+    display: flex; /* 横並びに変更 */
+    align-items: center; /* アイテムを縦中央に揃える */
+    margin-top: 20px;
+  }
+  
+  /* 画像部分のスタイル */
+  .other-picture {
+    text-align: center;
+    flex: 1; /* 画像の部分に十分なスペースを与える */
+  
+    .other-img {
+      width: 300px; /* 横幅 */
+      height: auto; /* 高さ */
+      border-radius: 30px; /* 丸みをつける */
+      object-fit: cover; /* 画像の比率を保ちつつ、枠内に収める */
+      object-position: center top;
+    }
+  }
+  
+  .other-picture-yoko {
+    text-align: left;
+    flex: 1; /* 画像の部分に十分なスペースを与える */
+    margin-top: 15px;
+  
+    .other-img {
+      width: auto; /* 横幅 */
+      height: 150px; /* 高さ */
+      border-radius: 15px; /* 丸みをつける */
+      object-fit: cover; /* 画像の比率を保ちつつ、枠内に収める */
+      object-position: center top;
+    }
+  }
+  
+  /* コンテンツ詳細部分のスタイル */
+  .other-details {
+    flex: 2; /* 残りのスペースをすべて占める */
+    text-align: left;
+    padding: 0 20px;
+    margin-top: 0px;
+  
+    h1 {
+      font-family: 'Kiwi Maru', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #1f1e1e;
+      margin-bottom: 12px;
+      margin-top: -15px;
+    }
+  
+    h2 {
+      font-family: 'Kiwi Maru', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #1f1e1e;
+      margin-bottom: 0px;
+    }
+  
+    h3 {
+      font-family: 'Kiwi Maru', sans-serif;
+      font-size: 23px;
+      font-weight: 600;
+      color: #d04732;
+      line-height: 1.2;
+      margin-top: 0px;
+    }
+  
+    h4 {
+      font-family: 'Kiwi Maru', sans-serif;
+      font-size: 19px;
+      font-weight: 600;
+      color: #1f1e1e;
+      line-height: 1.2;
+      margin-top: 0px;
+    }
+  
+    p {
+      font-family: 'Kiwi Maru', sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      color: #1f1e1e;
+      text-align: left;
+      margin-top: 0px;
+      margin-bottom: -10px;
+      line-height: 1.2;
+    }
+  }
+  
+  /* 完成したサイトのイメージ */
+  .image-row { /* 横並びに変更されたクラス */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .img-box {
+    width: 48%; /* 画像が横並びになるように調整 */
+    text-align: center;
+  }
+  
+  .img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* 使用ツールやスキルを紹介するセクション */
+  .tools-section {
+    margin-top: 40px;
+  
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+      color: #1f1e1e;
+      margin-bottom: 20px;
+    }
+  
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 幅に応じて調整 */
+      gap: 15px; /* アイコン間のスペースを設定 */
+      justify-items: center;
+      max-width: 700px; /* 最大横幅を設定 */
+      margin: 0 auto; /* 中央揃え */
+  
+      .tool-img {
+        width: 80px; /* アイコンのサイズ */
+        height: 80px;
+        object-fit: contain;
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+      }
+    }
+  
+    /* レスポンシブ対応 */
+    @media (max-width: 768px) {
+      .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* 小さめのアイコン幅 */
+        gap: 10px; /* アイコン間のスペースを縮小 */
+      }
+  
+      .tool-img {
+        width: 60px; /* 小さい画面ではアイコンも縮小 */
+        height: 60px;
+      }
+    }
+  }
+  
+  /* 強調表示する部分 */
+  .highlight {
+    font-weight: bold; /* 太字 */
+    color: #d04732; /* 赤文字 */
+  }
+  
+  /* スペースを作るためのクラス */
+  .spaced {
+    display: block; /* 改行をブロック要素として扱う */
+    margin-top: 15px; /* 各行間に余白を追加 */
+  }
+  
+  .tools-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: left; /* アイコンを中央に配置 */
+  }
+  
+  .tool-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tool-img {
+    width: 50px;  /* アイコンの幅 */
+    height: 50px; /* アイコンの高さ */
+    object-fit: contain; /* アイコンが画像のアスペクト比を保ちながらフィット */
+    margin-bottom: -13px;
+  }
+  

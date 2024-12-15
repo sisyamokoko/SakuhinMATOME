@@ -90,8 +90,8 @@ body {
 .card {
   position: relative;
   flex: 0 0 320px;
-  width: 320px;
-  height: 320px;
+  width: 400px;
+  height: 400px;
   background-color: #333;
   overflow: hidden;
   border-radius: 10px;
@@ -121,7 +121,6 @@ body {
 .card-info {
   padding: 20px;
   position: absolute;
-  margin-bottom: 10px;
   bottom: 0;
   color: #fff;
   transform: translateY(40%);
@@ -129,7 +128,7 @@ body {
 
   p.card-content {
     opacity: 0; /* 初期非表示 */
-    margin-top: -20px;
+    margin-top: -10px;
     text-shadow: rgba(black, 1) 0 2px 3px;
     transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
@@ -144,7 +143,7 @@ body {
     position: absolute;
     top: 0; left: 0;
     z-index: 0;
-    width: 100%;
+    width: 150%;
     height: 100%;
     background-image: linear-gradient(to bottom, transparent 0%, rgba(#000, 0.6) 100%);
     background-blend-mode: overlay;
@@ -156,10 +155,11 @@ body {
 
 .card-info h1 {
   font-family: 'Kiwi Maru', sans-serif;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 700;
   margin-top: -3px;
   text-shadow: rgba(black, 0.5) 0 10px 10px;
+  padding-bottom: 10px;
 }
 
 .card-category {
@@ -251,4 +251,72 @@ body {
   text-align: center;
   margin-bottom: 40px;
   line-height: 1.6;
+}
+
+/* ポップアップのオーバーレイ */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明の背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* 他のコンテンツの上に表示 */
+}
+
+/* ポップアップの内容 */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.popup-content p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #131313;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #4d4d4d;
+}
+
+/* ポップアップ画像のスタイル */
+.popup-image {
+  width: 100%;  /* 親要素に合わせて画像をリサイズ */
+  max-width: 450px;  /* 最大幅を500pxに制限 */
+  height: auto;  /* 高さは自動調整 */
+  margin-top: 5px;
+  border-radius: 8px; /* 画像の角を丸くする */
+  margin-bottom: 4px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content iframe {
+  width: 100%;
+  height: 300px; /* 固定の高さ */
+  max-width: 100%; /* 幅は最大で100% */
+  max-height: 100%; /* 高さは最大で100% */
+  aspect-ratio: 16/9; /* アスペクト比を16:9に設定（映像の標準的な比率） */
 }

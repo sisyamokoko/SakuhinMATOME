@@ -1,3 +1,4 @@
+// App.js
 import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -12,6 +13,8 @@ import GraphicHome from "./Graphic/GraphicHome";
 import CGHome from "./3DCG/CGHome";
 import OtherHome from "./Other/OtherHome";
 import Profile from "./Profile/ProfileHome";
+import SoundArt from "./Other/SoundArt"; // SoundArtページをインポート
+import Portsite from "./Other/Portsite"; // Portsiteページをインポート
 import "./styles.scss";
 
 const useScrollToTop = () => {
@@ -35,6 +38,9 @@ const App = () => {
           <Route path="/3dcg" element={<CGHome />} />
           <Route path="/other" element={<OtherHome />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/soundart" element={<SoundArt />} />
+          <Route path="/portsite" element={<Portsite />} />{" "}
+          {/* 新しいルートを追加 */}
         </Routes>
       </main>
       <Footer />

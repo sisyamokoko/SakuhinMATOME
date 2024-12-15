@@ -1,67 +1,27 @@
 const OtherData = [
   {
     id: 1,
-    category: "Other",
-    title: "A",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
+    category: "UIUXデザイン・プログラミング",
+    title: "ポートフォリオサイトＡ",
+    content:
+      "ポートフォリオサイトを作成する大学課題。（今見ていただいているサイトは別で作り直しています）",
     image:
       "https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=",
   },
   {
     id: 2,
-    category: "タイポグラフィ",
-    title: "B",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=",
+    category: "UIデザイン",
+    title: "サウンド・アートコンサート",
+    content: "大同大学イベントサイトのデザインリメイク課題",
+    image: "https://i.postimg.cc/Hs31L3KY/samunesumasho.png",
   },
   {
     id: 3,
-    category: "タイポグラフィ",
-    title: "C",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=",
-  },
-  {
-    id: 4,
-    category: "3DCG",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
-  },
-  {
-    id: 5,
-    category: "タイポグラフィ",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
-  },
-  {
-    id: 6,
-    category: "タイポグラフィ",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
-  },
-  {
-    id: 7,
-    category: "タイポグラフィ",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
-  },
-  {
-    id: 8,
-    category: "タイポグラフィ",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
+    category: "モーショングラフィックス",
+    title: "SPACE",
+    content: "宇宙をテーマに作成した映像作品です。以下の映像をご覧ください。",
+    image: "https://i.postimg.cc/v832dSGZ/othersamune.jpg",
+    video: "https://www.youtube.com/embed/6evjEBWYifc", // 埋め込み用のURL
   },
 ];
 

@@ -8,7 +8,7 @@ const Footer = () => {
         <p className="footer-copyright">&copy; 2024 Tanaka Shoudai Portfolio</p>
         <div className="social-icons">
           <a
-            href="https://www.instagram.com/syamomomon/profilecard/?igsh=ZndjNm5vc3k2bXI3"
+            href="https://www.instagram.com/syamomomon/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
