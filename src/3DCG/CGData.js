@@ -2,66 +2,59 @@ const CGData = [
   {
     id: 1,
     category: "3DCG",
-    title: "A",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=",
+    title: "大同大学-X棟",
+    tools: "使用ツール：Blender",
+    content: "大同大学のX棟の一角をBlenderで作成した作品です。",
+    image: "https://i.postimg.cc/pXhDXGrz/Xtou.jpg",
   },
   {
     id: 2,
-    category: "タイポグラフィ",
-    title: "B",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
+    category: "3DCG",
+    title: "祝・卒業",
+    tools: "使用ツール：Blender・Illustrator",
+    content:
+      "卒業式をテーマに作成した作品です。フォント以外は全ての素材を自作しています。",
     image:
-      "https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=",
+      "https://d2seyojk1jikvq.cloudfront.net/portfolio/If8c0f778c5d9b5111207746a6177ef99/image_file_1700925280.png",
   },
   {
     id: 3,
-    category: "タイポグラフィ",
-    title: "C",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
+    category: "3DCG",
+    title: "バレンタインチョコ",
+    tools: "使用ツール：Blender",
+    content:
+      "バレンタインチョコを3DCGで作成したものです。Instagramに投稿したのですが、「誰にもらったの？」と多くの人に聞かれたくらいには本物に近しいクオリティになっています。",
     image:
-      "https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=",
+      "https://d2seyojk1jikvq.cloudfront.net/portfolio/I07d6ac23701fe3fcba75fe82897a5809/image_file_1701090431.png",
   },
   {
     id: 4,
     category: "3DCG",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
+    title: "SwitchRoom",
+    tools: "使用ツール：Blender・Illustrator",
+    content:
+      "NintendoSwitchをモチーフに作成したミニチュアハウスです。机と椅子や、タンスなど様々な場所にSwitch要素を散りばめています。",
     image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
+      "https://d2seyojk1jikvq.cloudfront.net/portfolio/I71d05d7a6edb239953ede217562aa29a/image_file_1700924938.png",
   },
   {
     id: 5,
-    category: "タイポグラフィ",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
+    category: "3DCG",
+    title: "氷山",
+    tools: "使用ツール：Blender",
+    content:
+      "氷山をBlenderで作成したものです。地球温暖化をテーマに作成していたので、溶けた氷が離れていく様を表現しています。",
+    image: "https://i.postimg.cc/Rh49NbQd/hyouzan.jpg",
   },
   {
     id: 6,
-    category: "タイポグラフィ",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
+    category: "3DCG",
+    title: "クリスマス",
+    tools: "使用ツール：Blender・Photoshop",
+    content:
+      "クリスマスをテーマに作成したボクセル調の3DCG作品です。少し上下をぼかすことで、ミニチュア感を出しています。",
     image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
-  },
-  {
-    id: 7,
-    category: "タイポグラフィ",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
-  },
-  {
-    id: 8,
-    category: "タイポグラフィ",
-    title: "D",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=",
+      "https://d2seyojk1jikvq.cloudfront.net/portfolio/I82292714b148bbf7c92d01a05a606946/image_file_1723480952.jpeg",
   },
 ];
 

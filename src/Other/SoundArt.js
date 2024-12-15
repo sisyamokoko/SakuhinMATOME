@@ -56,9 +56,9 @@ const SoundArt = () => {
       {/* 課題とコンセプト */}
       <div className="other-details">
         <h2>課題</h2>
-        <h3>
+        <h2>
           分かりにくく、シンプルすぎるサイトを見て楽しめて見やすいサイトにリメイクする
-        </h3>
+        </h2>
 
         <h2>コンセプト</h2>
         <p>
@@ -160,14 +160,14 @@ const SoundArt = () => {
           {" "}
           {/* クラス名変更 */}
           <div className="img-box">
-            <h3>スマートフォン用</h3>
+            <h2>スマートフォン用</h2>
             <img
               src="https://i.postimg.cc/4xvHT0sw/sumaho.png" // ダミー画像
               alt="スマートフォン用サイト"
             />
           </div>
           <div className="img-box">
-            <h3>PC用</h3>
+            <h2>PC用</h2>
             <img
               src="https://i.postimg.cc/05c8B8f2/D22073-1.png" // ダミー画像
               alt="PC用サイト"

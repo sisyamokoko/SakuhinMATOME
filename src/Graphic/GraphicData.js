@@ -8,7 +8,7 @@ const GraphicData = [
   },
   {
     id: 9,
-    category: "タイポグラフィ",
+    category: "ロゴデザイン",
     title: "カラメル・空メール",
     tools: "使用ツール：Illustrator",
     content:

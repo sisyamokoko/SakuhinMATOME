@@ -17,6 +17,7 @@ import Portsite from "./Other/Portsite"; // Portsiteページをインポート
 import Sensya from "./Graphic/Sensya";
 import GraphicData from "./Graphic/GraphicData"; // グラフィックの画像データ
 import OtherData from "./Other/OtherData"; // その他の画像データ
+import CGData from "./3DCG/CGData"; // その他の画像データ
 import "./styles.scss";
 
 // useScrollToTop フック
@@ -41,6 +42,11 @@ const PreloadImages = () => {
 
       // OtherData の画像をプリロード
       OtherData.forEach((card) => {
+        const img = new Image();
+        img.src = card.image;
+      });
+
+      CGData.forEach((card) => {
         const img = new Image();
         img.src = card.image;
       });
