@@ -5,8 +5,7 @@ const OtherData = [
     title: "ポートフォリオサイトＡ",
     content:
       "ポートフォリオサイトを作成する大学課題。（今見ていただいているサイトは別で作り直しています）",
-    image:
-      "https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=",
+    image: "https://i.postimg.cc/fWKgb99D/foliosite.jpg",
   },
   {
     id: 2,

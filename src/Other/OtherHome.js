@@ -31,9 +31,9 @@ function OtherHome() {
     <div className="Graphic-container">
       <h1 className="title">Other</h1>
       <p className="description">
-        3DCG作品をまとめたページです。
+        その他作品をまとめたページです。映像やUIUX、プログラミングなどが含まれます。
         <br />
-        基本的にBlenderを使用しており、１つのテーマを設定して制作していることが多いです。{" "}
+        このポートフォリオサイトについての説明もこのページに追加する予定です。
       </p>
 
       <div className="home-card-wrapper">
@@ -73,6 +73,7 @@ function OtherHome() {
                 allowFullScreen
               ></iframe>
             )}
+            <br />
             <button onClick={closePopup}>閉じる</button>
           </div>
         </div>

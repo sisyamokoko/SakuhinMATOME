@@ -210,3 +210,22 @@
     margin-bottom: -13px;
   }
   
+  .link-button {
+    background-color: #131313; /* 緑色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+    margin-top: 3px;
+  
+    &:hover {
+      background-color: rgb(68, 68, 68); /* ホバー時に色を少し変える */
+    }
+  }
+  
