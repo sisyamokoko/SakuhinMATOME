@@ -1,4 +1,3 @@
-// App.js
 import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -15,21 +14,49 @@ import OtherHome from "./Other/OtherHome";
 import Profile from "./Profile/ProfileHome";
 import SoundArt from "./Other/SoundArt"; // SoundArtページをインポート
 import Portsite from "./Other/Portsite"; // Portsiteページをインポート
+import Sensya from "./Graphic/Sensya";
+import GraphicData from "./Graphic/GraphicData"; // グラフィックの画像データ
+import OtherData from "./Other/OtherData"; // その他の画像データ
 import "./styles.scss";
 
+// useScrollToTop フック
 const useScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
     // ページ遷移時にトップにスクロール
     window.scrollTo(0, 0);
-  }, [pathname]); // pathnameが変わるたびに実行
+  }, [pathname]); // pathname が変わるたびに実行
+};
+
+// 画像プリロード用コンポーネント
+const PreloadImages = () => {
+  useEffect(() => {
+    const preloadImages = () => {
+      // GraphicData の画像をプリロード
+      GraphicData.forEach((card) => {
+        const img = new Image();
+        img.src = card.image;
+      });
+
+      // OtherData の画像をプリロード
+      OtherData.forEach((card) => {
+        const img = new Image();
+        img.src = card.image;
+      });
+    };
+
+    preloadImages(); // 画像をプリロード
+  }, []);
+
+  return null; // UIには何も表示しない
 };
 
 const App = () => {
   return (
     <Router>
       <ScrollToTopHandler />
+      <PreloadImages /> {/* プリロードコンポーネントを追加 */}
       <Header />
       <main>
         <Routes>
@@ -40,6 +67,7 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/soundart" element={<SoundArt />} />
           <Route path="/portsite" element={<Portsite />} />{" "}
+          <Route path="/sensya" element={<Sensya />} />
           {/* 新しいルートを追加 */}
         </Routes>
       </main>

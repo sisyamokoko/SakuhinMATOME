@@ -1,5 +1,5 @@
 /* コンテナ全体のスタイル */
-.other-container {
+.graphic-container {
     width: 80%; /* 親要素の幅に対して80%の幅を使用 */
     max-width: 900px; /* 最大幅を900pxに設定 */
     margin: 0 auto;
@@ -10,7 +10,7 @@
   }
   
   /* ヘッダーのスタイル */
-  .other-header {
+  .graphic-header {
     font-family: 'Kiwi Maru', sans-serif;
     font-size: 23px;
     font-weight: 900;
@@ -18,7 +18,7 @@
     text-align: center;
     margin-top: 85px;
     margin-bottom: 50px;
-    
+  
     p {
       font-family: 'Noto Sans JP', sans-serif;
       font-size: 28px;
@@ -30,18 +30,18 @@
   }
   
   /* コンテンツ全体のスタイル */
-  .other-content {
+  .graphic-content {
     display: flex; /* 横並びに変更 */
     align-items: center; /* アイテムを縦中央に揃える */
     margin-top: 20px;
   }
   
   /* 画像部分のスタイル */
-  .other-picture {
+  .graphic-picture {
     text-align: center;
     flex: 1; /* 画像の部分に十分なスペースを与える */
   
-    .other-img {
+    .graphic-img {
       width: 300px; /* 横幅 */
       height: auto; /* 高さ */
       border-radius: 30px; /* 丸みをつける */
@@ -49,13 +49,28 @@
       object-position: center top;
     }
   }
-  
-  .other-picture-yoko {
+
+  .graphic-picture-eraba {
     text-align: left;
     flex: 1; /* 画像の部分に十分なスペースを与える */
     margin-top: 15px;
   
-    .other-img {
+    .graphic-img {
+      width: 90%; /* 横幅 */
+      height: auto; /* 高さ */
+      border-radius: 30px; /* 丸みをつける */
+      object-fit: cover; /* 画像の比率を保ちつつ、枠内に収める */
+      object-position: center top;
+    }
+  }
+  
+  /* 横向き画像のスタイル */
+  .graphic-picture-yoko {
+    text-align: left;
+    flex: 1; /* 画像の部分に十分なスペースを与える */
+    margin-top: 15px;
+  
+    .graphic-img {
       width: auto; /* 横幅 */
       height: 150px; /* 高さ */
       border-radius: 15px; /* 丸みをつける */
@@ -65,7 +80,7 @@
   }
   
   /* コンテンツ詳細部分のスタイル */
-  .other-details {
+  .graphic-details {
     flex: 2; /* 残りのスペースをすべて占める */
     text-align: left;
     padding: 0 20px;
@@ -118,15 +133,15 @@
     }
   }
   
-  /* 完成したサイトのイメージ */
-  .image-row { /* 横並びに変更されたクラス */
+  /* 画像を横並びに配置 */
+  .image-row {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
   
   .img-box {
-    width: 48%; /* 画像が横並びになるように調整 */
+    width: 48%;
     text-align: center;
   }
   
@@ -188,7 +203,7 @@
   /* スペースを作るためのクラス */
   .spaced {
     display: block; /* 改行をブロック要素として扱う */
-    margin-top: 15px; /* 各行間に余白を追加 */
+    margin-top: 10px; /* 各行間に余白を追加 */
   }
   
   .tools-icons {
@@ -209,23 +224,5 @@
     object-fit: contain; /* アイコンが画像のアスペクト比を保ちながらフィット */
     margin-bottom: -13px;
   }
-  
-  .link-button {
-    background-color: #131313; /* 緑色 */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 7px;
-    transition: background-color 0.3s ease;
-    margin-top: 3px;
-  
-    &:hover {
-      background-color: rgb(68, 68, 68); /* ホバー時に色を少し変える */
-    }
-  }
+
   

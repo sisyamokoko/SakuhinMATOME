@@ -1,11 +1,10 @@
 const GraphicData = [
   {
     id: 1,
-    category: "タイポグラフィ",
-    title: "A",
-    content: "ここにテキストが入ります。ここにテキストが入ります。",
-    image:
-      "https://d2seyojk1jikvq.cloudfront.net/portfolio/I36214f4128bc69e7b24c30d9c03f2fa3/image_file_1700915757.jpeg",
+    category: "グラフィック",
+    title: "洗車機ラッピングデザイン",
+    content: "洗車機前面のラッピングデザインをする産学連携プロジェクト",
+    image: "https://i.postimg.cc/XNtcJ4gN/sensyasamune.jpg",
   },
   {
     id: 9,
@@ -136,36 +135,6 @@ const GraphicData = [
       "PEOPLE1のアルバム「星巡り、君に金星」をモチーフに作成したタイポグラフィです。全体的に文字の流れを意識して作成しています。また、文字の一部に三日月のような形や星マークを入れることでアルバムタイトルらしさを演出しています。",
     image:
       "https://d2seyojk1jikvq.cloudfront.net/portfolio/I55c43b877a0320877a50ad795155ccc4/image_file_1723484766.jpeg",
-  },
-  {
-    id: 15,
-    category: "タイポグラフィ",
-    title: "アイサイト・ラブ",
-    tools: "使用ツール：Illustrator・Photoshop",
-    content:
-      "ァネイロさんの「アイサイト・ラブ」をモチーフに作成したタイポグラフィです。曲の内容が「目がおかしくて眼科に行く」というもののため、文字や背景を曲げたりぼかしたりしています。",
-    image:
-      "https://d2seyojk1jikvq.cloudfront.net/portfolio/I0359991e655197322244f72099fe1667/image_file_1723485066.jpeg",
-  },
-  {
-    id: 16,
-    category: "タイポグラフィ",
-    title: "アイサイト・ラブ",
-    tools: "使用ツール：Illustrator・Photoshop",
-    content:
-      "ァネイロさんの「アイサイト・ラブ」をモチーフに作成したタイポグラフィです。曲の内容が「目がおかしくて眼科に行く」というもののため、文字や背景を曲げたりぼかしたりしています。",
-    image:
-      "https://d2seyojk1jikvq.cloudfront.net/portfolio/I0359991e655197322244f72099fe1667/image_file_1723485066.jpeg",
-  },
-  {
-    id: 17,
-    category: "タイポグラフィ",
-    title: "アイサイト・ラブ",
-    tools: "使用ツール：Illustrator・Photoshop",
-    content:
-      "ァネイロさんの「アイサイト・ラブ」をモチーフに作成したタイポグラフィです。曲の内容が「目がおかしくて眼科に行く」というもののため、文字や背景を曲げたりぼかしたりしています。",
-    image:
-      "https://d2seyojk1jikvq.cloudfront.net/portfolio/I0359991e655197322244f72099fe1667/image_file_1723485066.jpeg",
   },
 ];
 

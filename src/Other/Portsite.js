@@ -23,7 +23,7 @@ const Portsite = () => {
 
         {/* 作品の詳細情報 */}
         <div className="other-details">
-          <h2>概要</h2>
+          <h3>概要</h3>
           <p>ポートフォリオサイトをHTML+CSSで作成する個人制作課題。</p>
           <h2>使用ツール</h2>
           <div className="tools-icons">
