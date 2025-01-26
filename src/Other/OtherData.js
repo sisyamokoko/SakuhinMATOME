@@ -17,6 +17,14 @@ const OtherData = [
     image: "https://i.postimg.cc/v832dSGZ/othersamune.jpg",
     video: "https://www.youtube.com/embed/6evjEBWYifc", // 埋め込み用のURL
   },
+  {
+    id: 4,
+    category: "モーショングラフィックス？",
+    title: "20!!!",
+    content: "20歳の誕生日に作った動画です。",
+    image: "https://i.postimg.cc/2yfmds17/20saisamunee.jpg",
+    video: "https://youtu.be/sKM364u9FzE?si=99j-uzhitEm8GxkJ", // 埋め込み用のURL
+  },
 ];
 
 export default OtherData;
