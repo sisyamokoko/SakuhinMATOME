@@ -23,7 +23,7 @@ const OtherData = [
     title: "20!!!",
     content: "20歳の誕生日に作った動画です。",
     image: "https://i.postimg.cc/2yfmds17/20saisamunee.jpg",
-    video: "https://youtu.be/sKM364u9FzE?si=99j-uzhitEm8GxkJ", // 埋め込み用のURL
+    video: "https://www.youtube.com/embed/sKM364u9FzE?si=m2XCI7o9N-y5uxes", // 埋め込み用のURL
   },
 ];
 
