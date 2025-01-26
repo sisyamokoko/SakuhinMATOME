@@ -269,7 +269,7 @@ body {
 
 /* ポップアップの内容 */
 .popup-content {
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(185, 190, 207);
   padding: 20px;
   border-radius: 8px;
   width: 80%;
@@ -277,29 +277,48 @@ body {
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 40px;
+  box-shadow: 
+    0px 0px 70px rgba(0, 0, 0, 0.7);
 }
 
 .popup-content h2 {
   font-size: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
+  margin-top: -2px;
 }
 
 .popup-content p {
   font-size: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  margin-top: 0;
+  max-width: 80%;  // テキストの最大幅を制限
+  margin-left: auto;  // 左右中央揃え
+  margin-right: auto; 
+  text-align: center;  // テキストを中央揃えに
 }
 
 .popup-content button {
+  font-family: 'Kiwi Maru', sans-serif;
+  font-size: 15px;
   padding: 10px 20px;
-  background-color: #131313;
-  color: rgb(231, 231, 231);
+  background-color: rgb(185, 190, 207); // ニューモフィズムっぽい明るい背景
+  color: rgb(27, 26, 31);
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 15px;
+  
+  /* 初期の影（ニューモフィズム風） */
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.2), 
+              -3px -3px 8px rgb(236, 245, 255); 
+
+  transition: all 0.1s ease;  // スムーズなアニメーション
 }
 
 .popup-content button:hover {
-  background-color: #4d4d4d;
+  /* ホバー時の影の変更（動きで浮き上がる効果） */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 
+              -1px -1px 3px rgb(236, 245, 255);
 }
 
 /* ポップアップ画像のスタイル */
@@ -314,8 +333,8 @@ body {
   
   /* ニューモーフィズムの影 */
   box-shadow: 
-    5px 5px 15px rgba(0, 0, 0, 0.3), /* 外側の影 */
-    -5px -5px 12px rgba(255, 255, 255, 0.8); /* 内側のハイライト */
+    5px 5px 12px rgba(0, 0, 0, 0.5), /* 外側の影 */
+    -5px -5px 12px rgb(236, 245, 255); /* 内側のハイライト */
 }
 
 
