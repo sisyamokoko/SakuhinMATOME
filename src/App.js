@@ -11,10 +11,6 @@ import HomePage from "./HomePage/Home";
 import GraphicHome from "./Graphic/GraphicHome";
 import CGHome from "./3DCG/CGHome";
 import OtherHome from "./Other/OtherHome";
-import Profile from "./Profile/ProfileHome";
-import SoundArt from "./Other/SoundArt"; // SoundArtページをインポート
-import Portsite from "./Other/Portsite"; // Portsiteページをインポート
-import Sensya from "./Graphic/Sensya";
 import GraphicData from "./Graphic/GraphicData"; // グラフィックの画像データ
 import OtherData from "./Other/OtherData"; // その他の画像データ
 import CGData from "./3DCG/CGData"; // その他の画像データ
@@ -70,10 +66,6 @@ const App = () => {
           <Route path="/graphic" element={<GraphicHome />} />
           <Route path="/3dcg" element={<CGHome />} />
           <Route path="/other" element={<OtherHome />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/soundart" element={<SoundArt />} />
-          <Route path="/portsite" element={<Portsite />} />{" "}
-          <Route path="/sensya" element={<Sensya />} />
           {/* 新しいルートを追加 */}
         </Routes>
       </main>

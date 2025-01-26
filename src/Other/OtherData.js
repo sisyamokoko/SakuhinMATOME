@@ -1,18 +1,13 @@
 const OtherData = [
   {
     id: 1,
-    category: "UIUXデザイン・プログラミング",
-    title: "ポートフォリオサイトＡ",
+    category: "UIデザイン・プログラミング",
+    title: "旧ポートフォリオサイト",
+    tools: "使用ツール：VScode",
     content:
-      "ポートフォリオサイトを作成する大学課題。（今見ていただいているサイトは別で作り直しています）",
-    image: "https://i.postimg.cc/fWKgb99D/foliosite.jpg",
-  },
-  {
-    id: 2,
-    category: "UIデザイン",
-    title: "サウンド・アートコンサート",
-    content: "大同大学イベントサイトのデザインリメイク課題",
-    image: "https://i.postimg.cc/Hs31L3KY/samunesumasho.png",
+      "２年生の際にHTML+CSSで作成したポートフォリオサイトです。このサイトとは全く関係ない別物です",
+    image:
+      "https://i.postimg.cc/dQnZH3KG/2025-01-26-23-04-53-portfolio2-three-sigma-vercel-app-b05b6069efa7.jpg",
   },
   {
     id: 3,

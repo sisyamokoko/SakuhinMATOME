@@ -1,12 +1,5 @@
 const GraphicData = [
   {
-    id: 1,
-    category: "グラフィック",
-    title: "洗車機ラッピングデザイン",
-    content: "洗車機前面のラッピングデザインをする産学連携プロジェクト",
-    image: "https://i.postimg.cc/XNtcJ4gN/sensyasamune.jpg",
-  },
-  {
     id: 9,
     category: "ロゴデザイン",
     title: "カラメル・空メール",

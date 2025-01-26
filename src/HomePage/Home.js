@@ -30,21 +30,12 @@ const Home = () => {
   return (
     <div className="main-wrapper">
       <h1 className="main-title">TanakaShoudai Portfolio</h1>
-      <p className="Slogan">
-        ターゲットのために様々なスタイル・ツールを
-        <br />
-        使い分ける事が出来るデザイナーです
-      </p>
       <p className="description">
-        私は課題制作でも自主制作でも<b>「人のためのデザイン」</b>
-        モットーに、ターゲット目線でデザインをしています。
+        今までに作ったものをまとめていたり、まとめていなかったりしてみました。
         <br />
-        大学では<b>映像制作</b>
-        を専攻しており、この分野を中心に学んでいます。また、自主制作では
-        <b>グラフィックデザイン</b>や<b>3DCG</b>
-        にも取り組んでおり、これらのスキルを活かした作品制作を行っています。さらに、
-        <b>プログラミング</b>
-        にも少しですが挑戦しており、幅広い分野でのスキル向上を目指しています。
+        気になるものがあれば見てみてください。
+        <br />
+        もっと気になったらTwitterかInstagramでも見てください。
       </p>
       <h1 className="main-title">Contents</h1>
       <Card
@@ -61,11 +52,6 @@ const Home = () => {
         title="Other"
         cardType="content-box3"
         onClick={() => navigate("/other")}
-      />
-      <Card
-        title="Profile"
-        cardType="content-box4"
-        onClick={() => navigate("/profile")}
       />
     </div>
   );

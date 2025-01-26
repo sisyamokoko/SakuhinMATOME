@@ -17,7 +17,7 @@ function OtherHome() {
     }
     // id=1はPortsiteページへ遷移
     else if (id === 1) {
-      navigate("/portsite");
+      window.open("https://portfolio2-three-sigma.vercel.app", "_blank");
     } else {
       setPopupData(selectedCard); // id=3などはポップアップで表示
     }
@@ -32,8 +32,6 @@ function OtherHome() {
       <h1 className="title">Other</h1>
       <p className="description">
         その他作品をまとめたページです。映像やUIUX、プログラミングなどが含まれます。
-        <br />
-        このポートフォリオサイトについての説明もこのページに追加する予定です。
       </p>
 
       <div className="home-card-wrapper">

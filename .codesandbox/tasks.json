@@ -2,13 +2,8 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
-<<<<<<< HEAD
-      "name": "Install Dependencies",
-      "command": "yarn install"
-=======
       "command": "yarn install",
       "name": "Install Dependencies"
->>>>>>> 96a877b22f67f45de0c5b0d3e71b74b99d02a48d
     }
   ],
 
@@ -17,24 +12,6 @@
     "start": {
       "name": "start",
       "command": "yarn start",
-<<<<<<< HEAD
-      "runAtStart": true,
-      "preview": {
-        "port": 3000
-      }
-    },
-    "build": {
-      "name": "build",
-      "command": "yarn build"
-    },
-    "test": {
-      "name": "test",
-      "command": "yarn test"
-    },
-    "eject": {
-      "name": "eject",
-      "command": "yarn eject"
-=======
       "runAtStart": true
     },
     "build": {
@@ -51,7 +28,6 @@
       "name": "eject",
       "command": "yarn eject",
       "runAtStart": false
->>>>>>> 96a877b22f67f45de0c5b0d3e71b74b99d02a48d
     }
   }
 }
