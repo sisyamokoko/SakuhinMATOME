@@ -345,3 +345,24 @@ body {
   max-height: 100%; /* 高さは最大で100% */
   aspect-ratio: 16/9; /* アスペクト比を16:9に設定（映像の標準的な比率） */
 }
+
+.footer .social-icons a {
+  transition: all 0.3s ease; /* アニメーションのスムーズさを設定 */
+}
+
+/* Instagramアイコンのホバーアニメーション */
+.footer .social-icons a[aria-label="Instagram"]:hover {
+  color: transparent; /* 初期色を透明に */
+  background: linear-gradient(to right,
+    rgba(247, 207, 0, 0.7),
+    rgba(246, 37, 2, 0.7) 45%,
+    rgba(182, 47, 82, 0.7) 75%,
+    rgba(113, 58, 166, 0.7));
+  -webkit-background-clip: text; /* グラデーションを文字に適用 */
+  background-clip: text;
+}
+
+/* Twitterアイコンのホバーアニメーション */
+.footer .social-icons a[aria-label="Twitter"]:hover {
+  color: #1DA1F2; /* Twitterの公式青 */
+}
